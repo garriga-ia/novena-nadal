@@ -6,8 +6,9 @@ Aquest paquet conté les nou pàgines de la novena, amb el text complet dels pun
 
 Cada carpeta `dia-1` fins a `dia-9` conté:
 
-- `dia-N.html`: la pàgina del dia, amb les imatges incrustades.
-- `index.html`: obre automàticament `dia-N.html`.
+- `index.html`: la pàgina del dia, amb les imatges incrustades i les etiquetes de previsualització perquè l'enllaç surti amb imatge i títol al WhatsApp.
+- `dia-N.html`: redirigeix a `index.html` (es manté perquè continuïn funcionant els enllaços antics).
+- `preview.jpg`: imatge de 1200×630 que mostra el WhatsApp en compartir l'enllaç.
 - Sis arxius `audio-dia-N-1.mp3` fins a `audio-dia-N-6.mp3`.
 - `.nojekyll`: evita el processament de Jekyll quan aquesta carpeta és l'arrel publicada.
 
@@ -21,7 +22,7 @@ Els botons "Escoltar" reprodueixen els MP3 de la mateixa carpeta. No necessiten 
 4. Arrossegueu les nou carpetes completes, mantenint-ne els noms i tots els fitxers interiors. No pugeu el ZIP sense descomprimir. Si ja hi ha versions anteriors, substituïu-ne els fitxers.
 5. Comproveu que els fitxers ocults `.nojekyll` també s'han pujat. Per desactivar Jekyll a tot el web, podeu afegir un `.nojekyll` buit a l'arrel que publica Pages.
 6. Feu **Commit changes**. Si encara no està activat, aneu a **Settings > Pages**, trieu **Deploy from a branch** i seleccioneu la branca i la carpeta correctes.
-7. Quan GitHub indiqui que el desplegament ha acabat, obriu l'adreça del vostre web seguida de `/dia-1/`, `/dia-2/`, etc. També podeu obrir directament `/dia-1/dia-1.html`.
+7. Quan GitHub indiqui que el desplegament ha acabat, obriu l'adreça del vostre web seguida de `/dia-1/`, `/dia-2/`, etc. L'enllaç que cal compartir és el de la carpeta, per exemple `https://garriga-ia.github.io/novena-nadal/dia-1/`.
 8. Reviseu cada dia i proveu els botons "Escoltar" des del mòbil.
 
 ## Substituir els àudios
@@ -43,6 +44,6 @@ Per exemple, la lectura del dia 3 ha de continuar dient-se `dia-3/audio-dia-3-3.
 
 ## Prova a l'ordinador
 
-Podeu obrir `dia-N.html` directament al navegador des de la carpeta descomprimida. Manteniu els sis MP3 al costat de l'HTML.
+Podeu obrir `dia-N/index.html` directament al navegador des de la carpeta descomprimida. Manteniu els sis MP3 al costat de l'HTML.
 
 Recordeu que en un repositori públic i a GitHub Pages els arxius poden ser accessibles a qualsevol persona amb l'enllaç. Publiqueu només els àudios que vulgueu compartir.
